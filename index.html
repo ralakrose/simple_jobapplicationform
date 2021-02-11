@@ -7,29 +7,32 @@
     <title>Job Applicatio Form</title>
   </head>
   <body>
+    <div>
     <h1>Job Application Form</h1>
-    <form name="registration" onSubmit="return formValidation();">
+    <form id="registration" onSubmit="return formValidation();">
+        <div class="container">
       <ul>
+
         <!--Passport/ID Number-->
-        <li><label for="userid" required>Passport/Id:</label></li>
-        <li><input type="text" name="userid" size="12" /></li>
+        <li><label for="userid"  required>Passport/Id:</label></li>
+        <li><input type="text" id="userid" size="12" /></li>
 
         <!-- Full Name -->
         <li><label for="username">First Name:</label></li>
-        <li><input type="text" name="username" size="50" /></li>
+        <li><input type="text" id="username" size="50" /></li>
         <li><label for="username">Middle Name:</label></li>
-        <li><input type="text" name="username" size="50" /></li>
+        <li><input type="text" id="username" size="50" /></li>
         <li><label for="username">Last Name:</label></li>
-        <li><input type="text" name="username" size="50" /></li>
+        <li><input type="text" id="username" size="50" /></li>
 
         <!-- Contact details, addresses and other personals -->
         <li><label for="number">Mobile Number:</label></li>
-        <li><input type="text" name="mobilenumber" size="10" /></li>
+        <li><input type="text" id="mobilenumber" size="10" /></li>
         <li><label for="address">Address:</label></li>
-        <li><input type="text" name="address" size="50" /></li>
+        <li><input type="text" id="address" size="50" /></li>
         <li><label for="country">Country:</label></li>
         <li>
-          <select name="country">
+          <select id="country">
             <option selected="" value="Default">
               (Please select a country)
             </option>
@@ -43,15 +46,15 @@
           </select>
         </li>
         <li><label for="zip">ZIP Code:</label></li>
-        <li><input type="text" name="zip" /></li>
+        <li><input type="text" id="zip" /></li>
         <li><label for="email">Email:</label></li>
-        <li><input type="text" name="email" size="50" /></li>
+        <li><input type="text" id="email" size="50" /></li>
         <li><label id="gender">Sex:</label></li>
         <li>
-          <input type="radio" name="msex" value="Male" /><span>Male</span>
+          <input type="radio" id="msex" value="Male" /><span>Male</span>
         </li>
         <li>
-          <input type="radio" name="fsex" value="Female" /><span>Female</span>
+          <input type="radio" id="fsex" value="Female" /><span>Female</span>
         </li>
 
         <!-- Education Background -->
@@ -59,7 +62,7 @@
           <label for="educationlevel">Education level:</label>
         </li>
         <li>
-          <select name="educationlevel">
+          <select id="educationlevel">
             <option selected="" value="Default">(Please select one)</option>
             <option value="SSC">Secondary School Certificate</option>
             <option value="CT">Certificate</option>
@@ -72,41 +75,42 @@
 
         <!--Work Experience-->
         <li><label for="workplace">Company/ Organisation/ Employer:</label></li>
-        <li><input type="text" name="workplace" size="50" /></li>
+        <li><input type="text" id="workplace" size="50" /></li>
         <li><label for="position">Position:</label></li>
-        <li><input type="text" name="position" size="50" /></li>
+        <li><input type="text" id="position" size="50" /></li>
         <li><label for="startdate">Start Date:</label></li>
-        <li><input name="startingdate" type="date" value="2021-01-01" /></li>
+        <li><input id="startingdate" type="date" value="2021-01-01" /></li>
         <li><label for="endingdate">Ending Date</label></li>
-        <li><input name="endingdate" type="date" value="2021-01-01" /></li>
+        <li><input id="endingdate" type="date" value="2021-01-01" /></li>
         <!--Upload Document-->
         <li><label for="cvupload">Upload your CV:</label></li>
-        <li><input type="file" name="file" /></li>
+        <li><input type="file" id="file" /></li>
 
         <li><label>Language:</label></li>
         <li>
-          <input type="checkbox" name="en" value="en" checked /><span
+          <input type="checkbox" id="en" value="en" checked /><span
             >English</span
           >
         </li>
         <li>
-          <input type="checkbox" name="nonen" value="noen" /><span
+          <input type="checkbox" id="nonen" value="noen" /><span
             >Kiswahili</span
           >
-          <input type="checkbox" name="nonen" value="noen" /><span>Arabic</span>
-          <input type="checkbox" name="nonen" value="noen" /><span>French</span>
+          <input type="checkbox" id="nonen" value="noen" /><span>Arabic</span>
+          <input type="checkbox" id="nonen" value="noen" /><span>French</span>
         </li>
         <li><label for="desc">About:</label></li>
         <li>
           <textarea
-            name="desc"
             id="desc"
+            
             placeholder="Please give a brief description of yourself.."
           ></textarea>
         </li>
-        <li><input type="submit" name="submit" value="Submit" /></li>
+        <li><input type="submit" id="submit" value="Submit" /></li>
       </ul>
     </form>
+    </div>
     <script src="index.js"></script>
   </body>
 </html>
