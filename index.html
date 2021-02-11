@@ -14,24 +14,26 @@
       <ul>
 
         <!--Passport/ID Number-->
-        <li><label for="userid"  required>Passport/Id:</label></li>
-        <li><input type="text" id="userid" size="12" /></li>
+        <li><div id="iditem"><label for="userid"  id="useridlabel">Passport/Id: *</label></div></li>
+        <li ><input type="text" id="userid" size="12" />
+        </li>
 
         <!-- Full Name -->
-        <li><label for="username">First Name:</label></li>
+        <li><label for="username" >First Name: *(alphabetic characters only)</label></li>
+        <li><div id="unameitem"><input type="text" id="username" size="50" /></div></li>
+        <li><label for="username">Middle Name: (alphabetic characters only)</label></li>
         <li><input type="text" id="username" size="50" /></li>
-        <li><label for="username">Middle Name:</label></li>
-        <li><input type="text" id="username" size="50" /></li>
-        <li><label for="username">Last Name:</label></li>
+        <li><label for="username">Last Name: * (alphabetic characters only)</label></li>
         <li><input type="text" id="username" size="50" /></li>
 
         <!-- Contact details, addresses and other personals -->
-        <li><label for="number">Mobile Number:</label></li>
-        <li><input type="text" id="mobilenumber" size="10" /></li>
-        <li><label for="address">Address:</label></li>
+        <li><label for="number">Mobile Number: *</label></li>
+        <li> <div id="numberitem"><input type="text" id="mobilenumber" size="10" /></div></li>
+        <li><label for="address">Address: (alphanumeric characters only)</label></li>
         <li><input type="text" id="address" size="50" /></li>
-        <li><label for="country">Country:</label></li>
+        <li><label for="country">Country: *</label></li>
         <li>
+          <div id="countryitem">
           <select id="country">
             <option selected="" value="Default">
               (Please select a country)
@@ -44,12 +46,13 @@
             <option value="SS">South Sudan</option>
             <option value="SOM">Somalia</option>
           </select>
+        </div>
         </li>
         <li><label for="zip">ZIP Code:</label></li>
         <li><input type="text" id="zip" /></li>
-        <li><label for="email">Email:</label></li>
-        <li><input type="text" id="email" size="50" /></li>
-        <li><label id="gender">Sex:</label></li>
+        <li><label for="email">Email: *</label></li>
+        <li> <div id="emailitem"><input type="text" id="email" size="50" /></div></li>
+        <li><label id="gender">Sex: *</label></li>
         <li>
           <input type="radio" id="msex" value="Male" /><span>Male</span>
         </li>
@@ -59,9 +62,10 @@
 
         <!-- Education Background -->
         <li>
-          <label for="educationlevel">Education level:</label>
+          <label for="educationlevel">Education level: *</label>
         </li>
         <li>
+          <div id="edutactionitem">
           <select id="educationlevel">
             <option selected="" value="Default">(Please select one)</option>
             <option value="SSC">Secondary School Certificate</option>
@@ -71,6 +75,7 @@
             <option value="MD">Master's Degree</option>
             <option value="PHD">PhD</option>
           </select>
+          </div>
         </li>
 
         <!--Work Experience-->
@@ -83,31 +88,26 @@
         <li><label for="endingdate">Ending Date</label></li>
         <li><input id="endingdate" type="date" value="2021-01-01" /></li>
         <!--Upload Document-->
-        <li><label for="cvupload">Upload your CV:</label></li>
+        <li><label for="cvupload">Upload your CV/Resume:</label></li>
         <li><input type="file" id="file" /></li>
 
         <li><label>Language:</label></li>
-        <li>
-          <input type="checkbox" id="en" value="en" checked /><span
-            >English</span
-          >
-        </li>
-        <li>
-          <input type="checkbox" id="nonen" value="noen" /><span
-            >Kiswahili</span
-          >
-          <input type="checkbox" id="nonen" value="noen" /><span>Arabic</span>
-          <input type="checkbox" id="nonen" value="noen" /><span>French</span>
-        </li>
+        
+          <li><input type="checkbox" id="en" value="en" /><span>English</span></li>
+          <li><input type="checkbox" id="nonen" value="noen" /><span>Kiswahili</span></li>
+         <li> <input type="checkbox" id="nonen" value="noen" /><span>Arabic</span></li>
+          <li><input type="checkbox" id="nonen" value="noen" /><span>French</span></li>      
         <li><label for="desc">About:</label></li>
         <li>
+          <div id="descitem">
           <textarea
             id="desc"
             
             placeholder="Please give a brief description of yourself.."
           ></textarea>
+          </div>
         </li>
-        <li><input type="submit" id="submit" value="Submit" /></li>
+        <li ><input type="submit" id="submit" value="Submit" /></li>
       </ul>
     </form>
     </div>

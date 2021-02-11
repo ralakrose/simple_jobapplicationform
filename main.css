@@ -1,26 +1,59 @@
 .container {
-  margin: 30px;
+  margin: 0 150px 0 150px;
   font-size: 1.2rem;
   padding: 10px;
   border: 1px solid #efefef;
   border-radius: 4px;
+  background-color: whitesmoke;
 }
 li {
   list-style: none;
   padding: 5px;
+}
+li select option {
+  padding: 0;
 }
 input {
   height: 30px;
   width: 100vh;
   border-radius: 4px;
   border: 1px solid #efefef;
+  margin-bottom: 10px;
 }
-input span {
-  padding: 0;
+li #msex,
+#fsex {
+  margin-left: 50px;
+  border: none;
+  width: auto;
+  padding-top: 10px;
+}
+li #en,
+#nonen {
+  margin-left: 50px;
+  border: none;
+  width: auto;
+  padding-top: 10px;
 }
 h1 {
   text-align: center;
 }
 label {
   font-family: Georgia, "Times New Roman", Times, serif;
+}
+form textarea {
+  float: left;
+  width: 100vh;
+  height: 150px;
+  border-radius: 4px;
+  border: 1px solid #efefef;
+}
+
+[type="submit"] {
+  font-size: 18px;
+  margin-top: 20px;
+}
+#submit {
+  width: 100vh;
+  background-color: green;
+  height: 40px;
 }
